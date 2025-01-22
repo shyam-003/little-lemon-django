@@ -13,7 +13,7 @@ class MenuViewTest(TestCase):
         self.menu_item_3 = Menu.objects.create(title="Ice Cream", price=5.0, inventory=100)
         
     def test_get_all_items(self):
-        response = self.client.get('/lemonapp/menu/')
+        response = self.client.get('/lemonapp/menoo/')
         
         menu_items = Menu.objects.all()
         serializer = MenuSerializer(menu_items, many=True)
