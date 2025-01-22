@@ -13,4 +13,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('lemonapp/', include('lemonApp.urls')),
     path('lemonapp/booking/', include(router.urls)),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken'))
 ]
